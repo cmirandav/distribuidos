@@ -1,0 +1,104 @@
+﻿@model Front.Models.Usuarios
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Usuarios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nom_usu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nom_usu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cod_cla)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cod_cla)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tip_usu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tip_usu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cod_pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cod_pais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cod_ubi_geo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cod_ubi_geo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dir_usu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dir_usu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.num_tlf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.num_tlf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nom_ent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nom_ent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cod_equ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cod_equ)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

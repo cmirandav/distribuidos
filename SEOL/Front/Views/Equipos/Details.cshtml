@@ -1,0 +1,26 @@
+﻿@model Front.Models.Equipos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Equipos</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nom_equ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nom_equ)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.cod_equ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

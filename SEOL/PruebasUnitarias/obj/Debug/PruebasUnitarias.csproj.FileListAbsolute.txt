@@ -1,0 +1,6 @@
+D:\UPC\FInal_v2\SEOL\PruebasUnitarias\bin\Debug\PruebasUnitarias.dll.config
+D:\UPC\FInal_v2\SEOL\PruebasUnitarias\bin\Debug\PruebasUnitarias.dll
+D:\UPC\FInal_v2\SEOL\PruebasUnitarias\bin\Debug\PruebasUnitarias.pdb
+D:\UPC\FInal_v2\SEOL\PruebasUnitarias\obj\Debug\PruebasUnitarias.csprojResolveAssemblyReference.cache
+D:\UPC\FInal_v2\SEOL\PruebasUnitarias\obj\Debug\PruebasUnitarias.dll
+D:\UPC\FInal_v2\SEOL\PruebasUnitarias\obj\Debug\PruebasUnitarias.pdb

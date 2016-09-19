@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BD_SEOL2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Equipos">
+    <Key>
+      <PropertyRef Name="cod_equ" />
+    </Key>
+    <Property Name="cod_equ" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="nom_equ" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Paises">
+    <Key>
+      <PropertyRef Name="cod_pais" />
+    </Key>
+    <Property Name="cod_pais" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="nom_pais" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="TipoUsuarios">
+    <Key>
+      <PropertyRef Name="tip_usu" />
+    </Key>
+    <Property Name="tip_usu" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="des_usu" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="Ubigeos">
+    <Key>
+      <PropertyRef Name="cod_ubi_geo" />
+    </Key>
+    <Property Name="cod_ubi_geo" Type="char" MaxLength="6" Nullable="false" />
+    <Property Name="nom_dep" Type="varchar" MaxLength="30" />
+    <Property Name="nom_prv" Type="varchar" MaxLength="30" />
+    <Property Name="nom_dis" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="cod_usu" />
+    </Key>
+    <Property Name="cod_usu" Type="char" MaxLength="6" Nullable="false" />
+    <Property Name="nom_usu" Type="varchar" MaxLength="100" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="cod_cla" Type="varchar" MaxLength="10" />
+    <Property Name="tip_usu" Type="char" MaxLength="1" />
+    <Property Name="cod_pais" Type="char" MaxLength="3" />
+    <Property Name="cod_ubi_geo" Type="char" MaxLength="6" />
+    <Property Name="dir_usu" Type="varchar" MaxLength="50" />
+    <Property Name="num_tlf" Type="varchar" MaxLength="12" />
+    <Property Name="nom_ent" Type="varchar" MaxLength="100" />
+    <Property Name="cod_equ" Type="char" MaxLength="4" />
+  </EntityType>
+  <EntityContainer Name="BD_SEOL2ModelStoreContainer">
+    <EntitySet Name="Equipos" EntityType="Self.Equipos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Paises" EntityType="Self.Paises" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoUsuarios" EntityType="Self.TipoUsuarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ubigeos" EntityType="Self.Ubigeos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

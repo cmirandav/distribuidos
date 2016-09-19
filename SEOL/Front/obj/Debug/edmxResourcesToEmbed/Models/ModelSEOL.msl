@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BD_SEOL2ModelStoreContainer" CdmEntityContainer="BD_SEOL2Entities1">
+    <EntitySetMapping Name="Equipos">
+      <EntityTypeMapping TypeName="BD_SEOL2Model.Equipos">
+        <MappingFragment StoreEntitySet="Equipos">
+          <ScalarProperty Name="cod_equ" ColumnName="cod_equ" />
+          <ScalarProperty Name="nom_equ" ColumnName="nom_equ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paises">
+      <EntityTypeMapping TypeName="BD_SEOL2Model.Paises">
+        <MappingFragment StoreEntitySet="Paises">
+          <ScalarProperty Name="cod_pais" ColumnName="cod_pais" />
+          <ScalarProperty Name="nom_pais" ColumnName="nom_pais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoUsuarios">
+      <EntityTypeMapping TypeName="BD_SEOL2Model.TipoUsuarios">
+        <MappingFragment StoreEntitySet="TipoUsuarios">
+          <ScalarProperty Name="tip_usu" ColumnName="tip_usu" />
+          <ScalarProperty Name="des_usu" ColumnName="des_usu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ubigeos">
+      <EntityTypeMapping TypeName="BD_SEOL2Model.Ubigeos">
+        <MappingFragment StoreEntitySet="Ubigeos">
+          <ScalarProperty Name="cod_ubi_geo" ColumnName="cod_ubi_geo" />
+          <ScalarProperty Name="nom_dep" ColumnName="nom_dep" />
+          <ScalarProperty Name="nom_prv" ColumnName="nom_prv" />
+          <ScalarProperty Name="nom_dis" ColumnName="nom_dis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="BD_SEOL2Model.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="cod_usu" ColumnName="cod_usu" />
+          <ScalarProperty Name="nom_usu" ColumnName="nom_usu" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="cod_cla" ColumnName="cod_cla" />
+          <ScalarProperty Name="tip_usu" ColumnName="tip_usu" />
+          <ScalarProperty Name="cod_pais" ColumnName="cod_pais" />
+          <ScalarProperty Name="cod_ubi_geo" ColumnName="cod_ubi_geo" />
+          <ScalarProperty Name="dir_usu" ColumnName="dir_usu" />
+          <ScalarProperty Name="num_tlf" ColumnName="num_tlf" />
+          <ScalarProperty Name="nom_ent" ColumnName="nom_ent" />
+          <ScalarProperty Name="cod_equ" ColumnName="cod_equ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

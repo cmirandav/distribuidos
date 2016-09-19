@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BD_SEOL2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Equipos">
+          <Key>
+            <PropertyRef Name="cod_equ" />
+          </Key>
+          <Property Name="cod_equ" Type="char" MaxLength="4" Nullable="false" />
+          <Property Name="nom_equ" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Paises">
+          <Key>
+            <PropertyRef Name="cod_pais" />
+          </Key>
+          <Property Name="cod_pais" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="nom_pais" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="TipoUsuarios">
+          <Key>
+            <PropertyRef Name="tip_usu" />
+          </Key>
+          <Property Name="tip_usu" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="des_usu" Type="varchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="Ubigeos">
+          <Key>
+            <PropertyRef Name="cod_ubi_geo" />
+          </Key>
+          <Property Name="cod_ubi_geo" Type="char" MaxLength="6" Nullable="false" />
+          <Property Name="nom_dep" Type="varchar" MaxLength="30" />
+          <Property Name="nom_prv" Type="varchar" MaxLength="30" />
+          <Property Name="nom_dis" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="cod_usu" />
+          </Key>
+          <Property Name="cod_usu" Type="char" MaxLength="6" Nullable="false" />
+          <Property Name="nom_usu" Type="varchar" MaxLength="100" />
+          <Property Name="email" Type="varchar" MaxLength="100" />
+          <Property Name="cod_cla" Type="varchar" MaxLength="10" />
+          <Property Name="tip_usu" Type="char" MaxLength="1" />
+          <Property Name="cod_pais" Type="char" MaxLength="3" />
+          <Property Name="cod_ubi_geo" Type="char" MaxLength="6" />
+          <Property Name="dir_usu" Type="varchar" MaxLength="50" />
+          <Property Name="num_tlf" Type="varchar" MaxLength="12" />
+          <Property Name="nom_ent" Type="varchar" MaxLength="100" />
+          <Property Name="cod_equ" Type="char" MaxLength="4" />
+        </EntityType>
+        <EntityContainer Name="BD_SEOL2ModelStoreContainer">
+          <EntitySet Name="Equipos" EntityType="Self.Equipos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Paises" EntityType="Self.Paises" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TipoUsuarios" EntityType="Self.TipoUsuarios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ubigeos" EntityType="Self.Ubigeos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BD_SEOL2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Equipos">
+          <Key>
+            <PropertyRef Name="cod_equ" />
+          </Key>
+          <Property Name="cod_equ" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="nom_equ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Paises">
+          <Key>
+            <PropertyRef Name="cod_pais" />
+          </Key>
+          <Property Name="cod_pais" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="nom_pais" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TipoUsuarios">
+          <Key>
+            <PropertyRef Name="tip_usu" />
+          </Key>
+          <Property Name="tip_usu" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="des_usu" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Ubigeos">
+          <Key>
+            <PropertyRef Name="cod_ubi_geo" />
+          </Key>
+          <Property Name="cod_ubi_geo" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="nom_dep" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="nom_prv" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="nom_dis" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="cod_usu" />
+          </Key>
+          <Property Name="cod_usu" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="nom_usu" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="cod_cla" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="tip_usu" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="cod_pais" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="cod_ubi_geo" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+          <Property Name="dir_usu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="num_tlf" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="nom_ent" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="cod_equ" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="BD_SEOL2Entities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Equipos" EntityType="Self.Equipos" />
+          <EntitySet Name="Paises" EntityType="Self.Paises" />
+          <EntitySet Name="TipoUsuarios" EntityType="Self.TipoUsuarios" />
+          <EntitySet Name="Ubigeos" EntityType="Self.Ubigeos" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BD_SEOL2ModelStoreContainer" CdmEntityContainer="BD_SEOL2Entities1">
+          <EntitySetMapping Name="Equipos">
+            <EntityTypeMapping TypeName="BD_SEOL2Model.Equipos">
+              <MappingFragment StoreEntitySet="Equipos">
+                <ScalarProperty Name="cod_equ" ColumnName="cod_equ" />
+                <ScalarProperty Name="nom_equ" ColumnName="nom_equ" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Paises">
+            <EntityTypeMapping TypeName="BD_SEOL2Model.Paises">
+              <MappingFragment StoreEntitySet="Paises">
+                <ScalarProperty Name="cod_pais" ColumnName="cod_pais" />
+                <ScalarProperty Name="nom_pais" ColumnName="nom_pais" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TipoUsuarios">
+            <EntityTypeMapping TypeName="BD_SEOL2Model.TipoUsuarios">
+              <MappingFragment StoreEntitySet="TipoUsuarios">
+                <ScalarProperty Name="tip_usu" ColumnName="tip_usu" />
+                <ScalarProperty Name="des_usu" ColumnName="des_usu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ubigeos">
+            <EntityTypeMapping TypeName="BD_SEOL2Model.Ubigeos">
+              <MappingFragment StoreEntitySet="Ubigeos">
+                <ScalarProperty Name="cod_ubi_geo" ColumnName="cod_ubi_geo" />
+                <ScalarProperty Name="nom_dep" ColumnName="nom_dep" />
+                <ScalarProperty Name="nom_prv" ColumnName="nom_prv" />
+                <ScalarProperty Name="nom_dis" ColumnName="nom_dis" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuarios">
+            <EntityTypeMapping TypeName="BD_SEOL2Model.Usuarios">
+              <MappingFragment StoreEntitySet="Usuarios">
+                <ScalarProperty Name="cod_usu" ColumnName="cod_usu" />
+                <ScalarProperty Name="nom_usu" ColumnName="nom_usu" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="cod_cla" ColumnName="cod_cla" />
+                <ScalarProperty Name="tip_usu" ColumnName="tip_usu" />
+                <ScalarProperty Name="cod_pais" ColumnName="cod_pais" />
+                <ScalarProperty Name="cod_ubi_geo" ColumnName="cod_ubi_geo" />
+                <ScalarProperty Name="dir_usu" ColumnName="dir_usu" />
+                <ScalarProperty Name="num_tlf" ColumnName="num_tlf" />
+                <ScalarProperty Name="nom_ent" ColumnName="nom_ent" />
+                <ScalarProperty Name="cod_equ" ColumnName="cod_equ" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

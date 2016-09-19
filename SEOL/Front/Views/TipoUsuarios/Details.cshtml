@@ -1,0 +1,26 @@
+﻿@model Front.Models.TipoUsuarios
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TipoUsuarios</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.des_usu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.des_usu)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.tip_usu }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,98 @@
+﻿@model Front.Models.Usuarios
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Usuarios</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nom_usu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nom_usu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cod_cla)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cod_cla)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tip_usu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tip_usu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cod_pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cod_pais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cod_ubi_geo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cod_ubi_geo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dir_usu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dir_usu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.num_tlf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.num_tlf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nom_ent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nom_ent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cod_equ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cod_equ)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.cod_usu }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,5 @@
+D:\UPC\FInal_v2\SEOL\Servicios\bin\Servicios.dll.config
+D:\UPC\FInal_v2\SEOL\Servicios\bin\Servicios.dll
+D:\UPC\FInal_v2\SEOL\Servicios\bin\Servicios.pdb
+D:\UPC\FInal_v2\SEOL\Servicios\obj\Debug\Servicios.dll
+D:\UPC\FInal_v2\SEOL\Servicios\obj\Debug\Servicios.pdb

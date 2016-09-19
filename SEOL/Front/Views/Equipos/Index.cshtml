@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Front.Models.Equipos>
+
+@{
+    ViewBag.Title = "Equipos";
+}
+
+<h2>Equipos</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nom_equ)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nom_equ)
+        </td>
+        <td>
+            @Html.ActionLink("Modificar", "Edit", new { id=item.cod_equ }) |
+            @Html.ActionLink("Ver", "Details", new { id=item.cod_equ }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.cod_equ })
+        </td>
+    </tr>
+}
+
+</table>

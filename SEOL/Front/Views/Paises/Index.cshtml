@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Front.Models.Paises>
+
+@{
+    ViewBag.Title = "Paises";
+}
+
+<h2>Paises</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.cod_pais)
+            @Html.DisplayNameFor(model => model.nom_pais)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.cod_pais)
+            @Html.DisplayFor(modelItem => item.nom_pais)
+        </td>
+        <td>
+            @Html.ActionLink("Modificar", "Edit", new { id=item.cod_pais }) |
+            @Html.ActionLink("Ver", "Details", new { id=item.cod_pais }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.cod_pais })
+        </td>
+    </tr>
+}
+
+</table>

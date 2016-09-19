@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b035d7e0-3d94-4d63-9a43-54be6298273e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:62839/Paises.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Paises.disco" MetadataType="Disco" ID="3f09a44a-68db-426f-b31b-9b24af427f99" SourceId="1" SourceUrl="http://localhost:62839/Paises.svc?disco" />
+    <MetadataFile FileName="Paises.wsdl" MetadataType="Wsdl" ID="7cb2d607-2b02-403e-9403-e804a18b8756" SourceId="1" SourceUrl="http://localhost:62839/Paises.svc?wsdl" />
+    <MetadataFile FileName="Paises.xsd" MetadataType="Schema" ID="284eab67-8124-431a-aa12-237470ad1f03" SourceId="1" SourceUrl="http://localhost:62839/Paises.svc?xsd=xsd0" />
+    <MetadataFile FileName="Paises1.xsd" MetadataType="Schema" ID="b15cc625-c6a5-4818-bacf-352820b22b25" SourceId="1" SourceUrl="http://localhost:62839/Paises.svc?xsd=xsd1" />
+    <MetadataFile FileName="Paises2.xsd" MetadataType="Schema" ID="4381f351-0bbd-4809-adea-73e136bddaaf" SourceId="1" SourceUrl="http://localhost:62839/Paises.svc?xsd=xsd2" />
+    <MetadataFile FileName="Paises3.xsd" MetadataType="Schema" ID="864e4fb0-1a3c-45bd-9662-ebcf98c61dc4" SourceId="1" SourceUrl="http://localhost:62839/Paises.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
